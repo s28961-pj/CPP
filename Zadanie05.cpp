@@ -4,21 +4,21 @@ using namespace std;
 
 int main() {
 
-    int number1, number2, number3, wynik;
+    int number1, number2, number3;
 
-    cout << "Program, który odpowiada na pytanie, czy wśród trzech liczb są choć dwie takie same.\n";
+    cout << "\nProgram, który odpowiada na pytanie, czy wśród trzech liczb są choć dwie takie same.\n" << endl;
     cout << "Wprowadz liczbe nr 1: ";
     cin >> number1;
-    cout << "Wprowadz liczbe nr 2: ";
+    cout << "\nWprowadz liczbe nr 2: ";
     cin >> number2;
-    cout << "Wprowadz liczbe nr 3: ";
+    cout << "\nWprowadz liczbe nr 3: ";
     cin >> number3;
-    if ( number1 == number2 && number1 == number3 ) {
-        cout << "Wszystkie liczby są takie same.\n";
-    } else if ( number1 == number2 || number1 == number3 || number2 == number3 ) {
-        cout << "Przynajmniej dwie wśrod trzech są takie same.";
+    if ( number1 == number2 && number1 == number3 ) { // Operator logiczny AND == &&, oba wyrazenia musza dać true
+        cout << "\nWszystkie liczby są takie same." << endl;
+    } else if ( number1 == number2 || number1 == number3 || number2 == number3 ) { // Operator logiczny OR == ||, przynajmniej jedno wyrazenie musi dac true
+        cout << "\nPrzynajmniej dwie z trzech są takie same." << endl;
     } else {
-        cout << "Kazda z liczb jest inna.\n";
+        cout << "\nKazda z liczb jest inna." << endl;
     };
 
     return 0;

@@ -6,14 +6,14 @@ int main() {
 
     int liczba;
 
-    cout << "Program informujący czy liczba podana przez użytkownika jest większa, mniejsza czy równa zero.\n";
+    cout << "\nProgram informujący czy liczba podana przez użytkownika jest większa, mniejsza czy równa zero.\n" << endl;
     cout << "Podaj liczbę: ";
     cin >> liczba;
-    if ( liczba > 0 ) { // Pierwsza funkcja warunkowa
-        cout << "Podana liczba jest większa od 0.";
-    } else if ( liczba < 0 ) { //Druga funkcja warunkowa
-        cout << "Podana liczba jest mniejsza od 0";
-    } else cout << "Podana liczba jest rowna 0";
+    if ( liczba > 0 ) { // Pierwsza instrukcja warunkowa if else
+        cout << "\nPodana liczba jest większa od 0.";
+    } else if ( liczba < 0 ) { //Druga instrukcja warunkowa if else
+        cout << "\nPodana liczba jest mniejsza od 0";
+    } else cout << "\nPodana liczba jest rowna 0" << endl;
 
     return 0;
 };

@@ -6,15 +6,15 @@ int main() {
 
     int number1, number2, number3, wynik;
 
-    cout << "Program wyznaczający najmniejszą z trzech liczb podanych przez użytkownika..\n";
+    cout << "\nProgram wyznaczający najmniejszą z trzech liczb podanych przez użytkownika.\n" << endl;
     cout << "Wprowadz liczbe nr 1: ";
     cin >> number1;
-    cout << "Wprowadz liczbe nr 2: ";
+    cout << "\nWprowadz liczbe nr 2: ";
     cin >> number2;
-    cout << "Wprowadz liczbe nr 3: ";
+    cout << "\nWprowadz liczbe nr 3: ";
     cin >> number3;
-    wynik = min( min( number1, number2 ), number3 );
-    cout << wynik;
+    wynik = min( min( number1, number2 ), number3 ); // Funkcja min(a, b) porownuje 2 parametry i zwraca mniejsza wartosc
+    cout << "\nNajmniejsza z 3 podanych liczb to: " << wynik << endl;
 
     return 0;
 }

@@ -6,15 +6,15 @@ int main() {
 
     int liczba;
 
-    cout << "Program informujący czy liczba podana przez użytkownika jest parzysta czy nieparzysta.\n";
+    cout << "\nProgram informujący czy liczba podana przez użytkownika jest parzysta czy nieparzysta.\n" << endl;
     cout << "Wprowadz liczbe: ";
     cin >> liczba;
     if ( liczba == 0 ) {
-        cout << "Podana liczba wynosi 0.";
+        cout << "\nPodana liczba wynosi 0.";
     } else if ( liczba % 2 == 0 ) {
-        cout << "Podana liczba jest parzysta.";
+        cout << "\nPodana liczba jest parzysta.";
     } else {
-        cout << "Podana liczba jest nieparzysta.";
+        cout << "\nPodana liczba jest nieparzysta.";
     };
 
     return 0;

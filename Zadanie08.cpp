@@ -8,8 +8,8 @@ int main() {
 
     cout << "\nProgram, który porówna dwie daty.\nDaty są podane za pomocą wartości trzech zmiennych: \n- dzien1, miesiac1, rok1 dla pierwszej daty i \n- dzien2, miesiac2, rok2 dla drugiej daty.\n" << endl;
     
-    // DATA NR 1
-    do {    // Walidacja + iteracja
+    // Walidacja daty nr 1
+    do {    // Pętla warunkowa DO WHILE wykona polecenia przynajmniej raz, po czym sprawdzi warunek i jesli true powtorzy petle
         cout << "Podaj dzien 1: ";
         cin >> dzien1;
     } while ( dzien1 > 31 || dzien1 < 1 );
@@ -24,8 +24,8 @@ int main() {
         cin >> rok1;
     } while ( rok1 > 2022 || rok1 < 1 );
 
-    // DATA NR 2
-    do {    // Walidacja + iteracja
+    // Walidacja daty nr 2
+    do {
         cout << "Podaj dzien 2: ";
         cin >> dzien2;
     } while ( dzien2 > 31 || dzien2 < 1 );
