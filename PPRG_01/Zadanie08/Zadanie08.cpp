@@ -40,8 +40,8 @@ int main() {
         cin >> rok2;
     } while ( rok2 > 2022 || rok2 < 1 );
 
-    cout << dzien1 << "." << miesiac1 << "." << rok1 << "r. " << endl;
-    cout << dzien2 << "." << miesiac2 << "." << rok2 << "r. " << endl;
+    cout << dzien1 << "." << miesiac1 << "." << rok1 << " r. " << endl;
+    cout << dzien2 << "." << miesiac2 << "." << rok2 << " r. " << endl;
     
     return 0;
 }

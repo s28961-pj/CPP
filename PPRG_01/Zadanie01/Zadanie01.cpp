@@ -10,7 +10,8 @@ int main() {
     cout << "\nProgram zwracający wartość bezwzględną liczby podanej przez użytkownika.\n" << endl;
     cout << "Wprowadź liczbę: ";
     cin >> liczba;
-    wynik = abs(liczba); // Funkcja wartość bezwzględna z liczby <cmath>
+    wynik = liczba > 0 ? liczba : -liczba;
+    //wynik = abs(liczba); // Funkcja wartość bezwzględna z liczby <cmath>
     cout << "\nWartość bezwzględna liczby " << liczba << " to: " << wynik << endl;
 
     return 0;
