@@ -2,9 +2,10 @@
 ---
 
 ### Zadanie 4
-Napisz program, który obliczy sumę kdwadratów liczb od `1` do `n`. Zastosuj instrukcję pętli <b>for</b>. Wyświetl wynik w postaci:
+Napisz program, który obliczy sumę kdwadratów liczb od `1` do `n`. Zastosuj instrukcję pętli <b>for</b>. Wyświetl wynik w postaci: 
+
 <code>
-cout << "1*1 + 2*2 + ... + n*n" << suma << endl;
+    cout << "1*1 + 2*2 + ... + n*n" << suma << endl;
 </code>
 
 ### Zadanie 5
@@ -45,12 +46,13 @@ Na końcu, program powinien wydrukować wyniki obliczeń na konsoli, trzykrotnie
 Napisz program, który pobierze z konsoli dwie liczby całkowite. Następnie, na konsoli wydrukuje prostokąt zlozony z hashy `#`, o wymiarach zgodnych z wprowadzonymi wczesniej liczbami (pierwszy z wymiarow to szerokosc prostokata). 
 Jezeli ktorakolwiek z wprowadzonych liczb byla niedodatnia, program powinien zakonczyc dzialanie bez drukowania czegokolwiek.
 Przyklad wydruku dla liczb 3 i 4:
-<code>
+
+<pre>
 ###
 ###
 ###
 ###
-</code>
+</pre>
 
 ### Zadanie 9
 Algorytm sprawdzający, czy suma dwóch liczb podanych przez uzytkownika jest parzysta. Wskazówka: instrukcję wyznaczającą resztę z dzielenia liczby `a` przez `b` (czyli <b>a mod b</b>) zapisuje się w jezyku C jako `a % b`.
@@ -65,19 +67,21 @@ Program, będący prostym kalkulatorem (napisany na pierwszych zajęciach - kod 
 ### Zadanie 11
 Napisz program, który jest prostą grą. Twoim zadaniem w grze jest odgadnięcie wylosowanej przez komputer liczby ( z przedzialu `od 1 do 100`). Przy kazdej probie otrzymujesz wskazowkę, mowiaca czy wpisana przez ciebie wartosc jest za duza, czy za mala. Na poczatku gry wprowadz ograniczenie na liczbe krokow, w ktorych mozna odgadnac wylosowana liczbe. W przypadku odgadniecia wylosowanej gry niech pojawi sie komunikat "Wygrales" oraz obok liczba krokow, ktora byla potrzebna aby adgadnac liczbe.
 Do wylosowania liczby uzyj nastepujacej linii kodu (generator liczb losowych):
-<code>
+
+<pre>
 #include <cstdlib>
 #include <ctime>
 
 srand ((int) time(NULL));
 int Wylosowana = rand() % 100 + 1;
-</code>
+</pre>
 
 ### Zadanie 12
 Napisz program, ktory pobierze w konsoli napis, a nastepnie wydrukuje go w konsoli, w otoczeniu ramki zlozonej z gwiazdek `*`. Gdy napis okaze sie pusty, program powinien ponownie poprosic o jego wprowadzenie. 
 Przyklad wydruku dla napisu "Serce do walki":
-<code>
+
+<pre>
 ****************
 *Serce do walki*
 ****************
-</code>
+</pre>
