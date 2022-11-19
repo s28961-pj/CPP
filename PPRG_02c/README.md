@@ -55,12 +55,12 @@ Przyklad wydruku dla liczb 3 i 4:
 ### Zadanie 9
 Algorytm sprawdzający, czy suma dwóch liczb podanych przez uzytkownika jest parzysta. Wskazówka: instrukcję wyznaczającą resztę z dzielenia liczby `a` przez `b` (czyli <b>a mod b</b>) zapisuje się w jezyku C jako `a % b`.
 
-<img src="zadanie9.png">
+<img src="Zadanie9.png">
 
 ### Zadanie 10
 Program, będący prostym kalkulatorem (napisany na pierwszych zajęciach - kod ponizej) przeksztalc do takiej postaci, aby obliczenia mozna bylo wykonywac do momentu podania przez uzytkownika 0, ktore oznacza koniec pracy. Do zautomatyzowania pracy uzyj petli - wybierz optymalna petle, ktora uwzgledni specyfikę algorytmu. 
 
-<img src="zadanie10.png">
+<img src="Zadanie10.png">
 
 ### Zadanie 11
 Napisz program, który jest prostą grą. Twoim zadaniem w grze jest odgadnięcie wylosowanej przez komputer liczby ( z przedzialu `od 1 do 100`). Przy kazdej probie otrzymujesz wskazowkę, mowiaca czy wpisana przez ciebie wartosc jest za duza, czy za mala. Na poczatku gry wprowadz ograniczenie na liczbe krokow, w ktorych mozna odgadnac wylosowana liczbe. W przypadku odgadniecia wylosowanej gry niech pojawi sie komunikat "Wygrales" oraz obok liczba krokow, ktora byla potrzebna aby adgadnac liczbe.
