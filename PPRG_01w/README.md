@@ -2,7 +2,7 @@
 ---
 
 ### Zadanie 1
-Napisz program zwracający wartość bezwzględną liczby podanej przez użytkownika.
+Napisz program zwracający <b>wartość bezwzględną</b> liczby podanej przez użytkownika.
 
 ### Zadanie 2
 Napisz program informujący czy liczba podana przez użytkownika jest większa, mniejsza czy równa zero. Wykorzystaj tylko dwie instrukcje warunkowe.
@@ -20,7 +20,7 @@ Napisz program, który odpowiada na pytanie, czy wśród trzech liczb są choć 
 Napisz program, który odpowiada na pytanie, czy trzy podawane liczby całkowite są ustawione w porządku rosnącym.
 
 ### Zadanie 7
-Napisz program sprawdzający czy liczba podana przez użytkownika jest z przedziału <1,10> lub <17,21>
+Napisz program sprawdzający czy liczba podana przez użytkownika jest z przedziału `<1,10>` lub `<17,21>`
 
 ### Zadanie 8
 Napisz program, który porówna dwie daty. Daty są podane za pomocą wartości trzech zmiennych: `dzien1`, `miesiac1`, `rok1` dla pierwszej daty i `dzien2`, `miesiac2`, `rok2` dla drugiej daty.
@@ -29,10 +29,10 @@ Napisz program, który porówna dwie daty. Daty są podane za pomocą wartości 
 Program prosi o podanie pięciu liczb. O każdą z nich pyta oddzielnie. Program przerywa działanie z odpowiednim komunikatem, jeżeli kolejna liczba nie jest większa od poprzedniej.
 
 ### Zadanie 10
-Program prosi o podanie współczynników a i b w równaniu liniowym a*x + b = 0. Na podstawie podanych współczynników program podaje rozwiązanie równania.
+Program prosi o podanie współczynników `a` i `b` w równaniu liniowym <b>a*x + b = 0</b>. Na podstawie podanych współczynników program podaje rozwiązanie równania.
 
 ### Zadanie 11
-Program prosi o podanie współczynników a, b i c w równaniu kwadratowym axx + b*x + c = 0. Na podstawie podanych współczynników program podaje rozwiązanie równania.
+Program prosi o podanie współczynników `a`, `b` i `c` w równaniu kwadratowym <b>axx + b*x + c = 0</b>. Na podstawie podanych współczynników program podaje rozwiązanie równania.
 
 ### Uwaga
 Dla powyższych zadań: 
