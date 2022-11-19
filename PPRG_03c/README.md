@@ -32,11 +32,11 @@ Program ma wykonać następujące operacje:
 ### Zadanie 14
 Napisz program wczytujący znaki z klawiatury aż do momentu naciśnięcia klawisza `‘k’`. Znaki zapisywane są w tablicy `char[]`. Na zakończenie program generuje następujące informacje: ilość podanych znaków (przed wciśnięciem `‘k’`) oraz ilość znaków będących dużymi literami.
 
-<code><pre>
+<pre>
 if ((znak > 47) && (znak < 58)) cout << "Jest to cyfra." << endl;
 if ((znak > 96) && (znak < 123)) cout << "Jest to mala litera." << endl;
 if ((znak > 64) && (znak < 91)) cout << "Jest to duza litera." << endl;
-</pre></code>
+</pre>
 
 ### Zadanie 15
 Napisz program, który wczyta dowolny wyraz do tablicy typu char i sprawdza czy jest on <b>palindromem</b>. Palindrom to takie wyrażenie, które czytane od lewej do prawej brzmi tak samo jak czytane od prawej do lewej, np. oko, anna, kajak, owocowo.
@@ -44,7 +44,7 @@ Napisz program, który wczyta dowolny wyraz do tablicy typu char i sprawdza czy 
 ### Zadanie 16
 W oparciu o poniższy pseudokod napisz program, który dla zadanej tablicy będzie realizował <b>sortowanie bąbelkowe</b>. A następnie powtórz kroki i zastosuj sortowanie dla vectora. Aby porównać działanie zmierz czasy sortowania. Wykonaj testy dla kilku rozmiarów tablic.
 
-<code><pre>
+<pre>
 procedure sort_babel(A : lista elementów do posortowania, n : liczba_elementów(A))
   n = liczba_elementów(A)
 do
@@ -52,12 +52,12 @@ for (i = 0; i < n-1; i++) do:
 if A[i] > A[i+1] then swap(A[i], A[i+1])
 end if end for n = n-1
 while n > 1 end procedure
-</pre></code>
+</pre>
 
 W funkcji głównej `main`, przy wywołaniu funkcji z algorytmem, użyj poniższy kod aby ocenić działanie algorytmu dla wypełnionej (losowymi wartościami) tabeli o trzech rozmiarach `n = 25; 50; 100`.
 Kod pozwalający ocenić czas wykonywania algorytmu:
 
-<code><pre>
+<pre>
 #include <windows.h>
   
 int main() {
@@ -65,7 +65,7 @@ auto start = GetTickCount();
 //...wywoływana funkcja
 std::cout << GetTickCount() - start << " [ms]" << std::endl;
 }
-</pre></code>
+</pre>
 
 ### Zadanie 17
 Napisz program, który oblicza iloczyn skalarny dwóch wektorów składających się z elementów całkowitych. Maksymalny rozmiar wektorów wynosi `10`, rzeczywisty rozmiar n `(n ≤ 10)` wczytaj z klawiatury.
