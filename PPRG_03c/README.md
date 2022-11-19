@@ -32,11 +32,11 @@ Program ma wykonać następujące operacje:
 ### Zadanie 14
 Napisz program wczytujący znaki z klawiatury aż do momentu naciśnięcia klawisza `‘k’`. Znaki zapisywane są w tablicy `char[]`. Na zakończenie program generuje następujące informacje: ilość podanych znaków (przed wciśnięciem `‘k’`) oraz ilość znaków będących dużymi literami.
 
-<code>
+<code><pre>
 if ((znak > 47) && (znak < 58)) cout << "Jest to cyfra." << endl;
 if ((znak > 96) && (znak < 123)) cout << "Jest to mala litera." << endl;
 if ((znak > 64) && (znak < 91)) cout << "Jest to duza litera." << endl;
-</code>
+</pre></code>
 
 ### Zadanie 15
 Napisz program, który wczyta dowolny wyraz do tablicy typu char i sprawdza czy jest on <b>palindromem</b>. Palindrom to takie wyrażenie, które czytane od lewej do prawej brzmi tak samo jak czytane od prawej do lewej, np. oko, anna, kajak, owocowo.
