@@ -4,13 +4,15 @@ using namespace std;
 
 int main() {
 
-    int a, b, x;
+    float a, b, x;
 
-    cout << "Program podaje rozwiazanie rownania liniowego ax + b = 0 " << endl;
-    cout << "Wprowadz parametr a: ";
+    cout << "\nRÓWNANIE LINIOWE (ax + b = 0)" << endl;
+    cout << "-------------------------------" << endl;
+
+    cout << "Wprowadz a: ";
     cin >> a;
 
-    cout << "Wprowadz parametr b: ";
+    cout << "Wprowadz b: ";
     cin >> b;
 
     if (a == 0) {

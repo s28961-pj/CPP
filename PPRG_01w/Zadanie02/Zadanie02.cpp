@@ -6,7 +6,9 @@ int main() {
 
     int liczba;
 
-    cout << "\nProgram informujący czy liczba podana przez użytkownika jest większa, mniejsza czy równa zero.\n" << endl;
+    cout << "\nWIEKSZA, MNIEJSZA CZY ROWNA '0' ?.\n" << endl;
+    cout << "--------------------------------------" << endl;
+
     cout << "Podaj liczbę: ";
     cin >> liczba;
     if ( liczba > 0 ) { // Pierwsza instrukcja warunkowa if else

@@ -4,17 +4,17 @@ using namespace std;
 
 int main()
 {
+    cout << "\nNAJMNIEJSZA Z TRZECH\n" << endl;
+    cout << "------------------------" << endl;
 
     int number1, number2, number3, wynik;
-
-    cout << "\nProgram wyznaczający najmniejszą z trzech liczb podanych przez użytkownika.\n"
-         << endl;
     cout << "Wprowadz liczbe nr 1: ";
     cin >> number1;
     cout << "\nWprowadz liczbe nr 2: ";
     cin >> number2;
     cout << "\nWprowadz liczbe nr 3: ";
     cin >> number3;
+    
     if (number1 == number2 && number2 == number3)
     {
         cout << "Wszystkie podane liczby są identyczne." << endl;

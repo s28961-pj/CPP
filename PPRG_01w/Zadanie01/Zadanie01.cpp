@@ -5,14 +5,16 @@ using namespace std;
 
 int main() {
     
-    int liczba, wynik;
+    int a, wynik;
 
-    cout << "\nProgram zwracający wartość bezwzględną liczby podanej przez użytkownika.\n" << endl;
+    cout << "\nWARTOSC BEZWZGLEDNA\n" << endl;
+    cout << "-----------------------" << endl;
+
     cout << "Wprowadź liczbę: ";
-    cin >> liczba;
-    wynik = liczba > 0 ? liczba : -liczba;
+    cin >> a;
+    wynik = a > 0 ? a : -a;
     //wynik = abs(liczba); // Funkcja wartość bezwzględna z liczby <cmath>
-    cout << "\nWartość bezwzględna liczby " << liczba << " to: " << wynik << endl;
+    cout << "\nWartość bezwzględna liczby " << a << " to: " << wynik << endl;
 
     return 0;
 };

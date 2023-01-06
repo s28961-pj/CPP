@@ -6,7 +6,9 @@ int main() {
 
     int liczba;
 
-    cout << "\nProgram informujący czy liczba podana przez użytkownika jest parzysta czy nieparzysta.\n" << endl;
+    cout << "\nPARZYSTA CZY NIEPARZYSTA ?\n" << endl;
+    cout << "------------------------------" << endl;
+    
     cout << "Wprowadz liczbe: ";
     cin >> liczba;
     if ( liczba == 0 ) {
