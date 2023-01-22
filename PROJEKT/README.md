@@ -17,6 +17,8 @@ Napisz program rysowania znakiem ASCII poniższej figury. Program powinien umoż
 
 ## UPDATE!
 <li> 21.01.2023 - Projekt działa jedynie w systemie Windows! </li>
+<li> 21.01.2023 - Program testowany na GNU GCC COMPILER </li>
+<li> 21.01.2023 - Program nie dziala poprawnie przy uzyciu kompilatora g++ </li>
 <li> 21.01.2023 - Program drukuje dostepne znaki ASCII do wyboru </li>
 <li> 21.01.2023 - Program wczytuje rozmiar figury ( od 3 do 20 )  oraz drukuje go w konsoli </li>
 
