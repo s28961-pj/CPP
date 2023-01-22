@@ -9,8 +9,8 @@ using namespace std;
 // GoToXY(x,y) - pozycjonowanie kursora
 void GoToXY(int x,int y)
 {
-    // Create a COORD structure and fill in its members.
-    // This specifies the new position of the cursor that we will set.
+    // Tworzy strukture COORD i ja wypelnia.
+    // Okresla nowa pozycje kursora
 	COORD c;
 	c.X=x;
 	c.Y=y;
@@ -71,6 +71,7 @@ void WelcomeText() {
 int ChooseASCII() {
     int znak;
 
+    cout << "---------------------------------------------------" << endl;
     cout << "------Ponizej przedstawiono znaki kodu ASCII:------" << endl;
     cout << "---------------------------------------------------" << endl;
     for ( int i = 32; i < 126; i += 4 ) {
@@ -90,10 +91,15 @@ int ChooseASCII() {
             }
         }
     };
-    cout << "---------------------------------------------------" << endl;
 
-    cout << "Wybierz jeden ze znakow ASCII i podaj odpowiadajacy mu numer: ";
-    cin >> znak;
+    do {
+        cout << "---------------------------------------------------" << endl;
+        cout << "   Wybierz jeden ze znakow i podaj jego numer: ";
+        cin >> znak;
+        if (znak < 32 || znak > 127) {
+            cout << "   Bledny znak, wybierz z przedzialu <32, 127>" << endl;
+        }
+    } while (znak < 32 || znak > 127);
 
     // kod ASCII 32 - znak spacji
     // kod ASCII 127 - klawisz Delete
@@ -107,10 +113,14 @@ int EnterSize() {
 
     do
 	{
-        cout << "Podaj rozmiar figury (3-15): ";
+        cout << "---------------------------------------------------" << endl;
+        cout << "          Podaj rozmiar figury (3-20): ";
 		cin >> rozmiar;
+        if (rozmiar < 3 || rozmiar > 20) {
+            cout << "       Podales zly rozmiar, sproboj ponownie." << endl;
+        }
 	}
-    while(rozmiar < 3 || rozmiar > 20); // min - 3 zeby narysowac "X", max - 20
+    while(rozmiar < 3 || rozmiar > 20);
 
     return rozmiar;
 }
@@ -120,12 +130,12 @@ void PrintPattern(int n, int znak)
 {
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
-            // For i = 1, we print a 'znak' only in
-            // first and last columns
-            // For i = 2, we print a 'znak' only in
-            // second and second last columns
-            // In general, we print a 'znak' only in
-            // i-th and n+1-i th columns
+            // Dla i = 1, drukujemy 'znak' tylko
+            // w pierwszej i ostatniej kolumnie
+            // Dla i = 2, drukujemy 'znak' tylko
+            // za drugim i przedostatnim razem
+            // Wlasciwie, drukujemy 'znak' w
+            // kolumnach i oraz n+1-i
 
             if (j == i || j == (n + 1 - i))
                 cout << (char)(znak);
@@ -141,6 +151,8 @@ int main()
     int x=0 , y=0;
     int znak, rozmiar;
 
+    //MessageBox( NULL, "Dzien dobry!\nZa chwile zobaczysz interfejs w konsoli.", "Projekt zaliczeniowy", MB_OK);
+
     WelcomeText();
 
     znak = ChooseASCII();
@@ -148,19 +160,12 @@ int main()
     x = WhereX();
     y = WhereY();
 
-    cout << znak << " == \"" << (char)(znak) << "\"" << endl;
-    cout << rozmiar << endl;
-    cout << "x: " << x;
-    cout << "y: " << y;
-
+    cout << "           Wybrales znak: " << znak << " czyli \"" << (char)(znak) << "\"" << endl;
+    cout << "x: " << x << endl;
+    cout << "y: " << y << endl;
+    GoToXY(0, 0);
     PrintPattern(rozmiar, znak);
     GoToXY(0, 0);
-
-    cout << "znak: " << znak;
-    cout << "rozmiar: " << rozmiar;
-    cout << "x: " << x;
-    cout << "y: " << y;
-    cout << x << " " << y << endl;
 
     // while (true) {
     //     if (GetAsyncKeyState(VK_UP)) {
