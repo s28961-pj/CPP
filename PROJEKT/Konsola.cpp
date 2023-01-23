@@ -43,27 +43,27 @@ void GoToXY(int x, int y)
  }
 
 // ClearLine() - czyszczenie linii poczynajac od aktualnej pozycji kursora do konca linii - nie dziala
- void ClearLine()
- {
-     // nie dziala ;(
-     int x, y;
-     x = WhereX();
-     y = WhereY();
-     GoToXY(x, y);
-     for (int i = x; i <= 100; i++)
-         cout << " ";
-     GoToXY(x, y);
- }
+// void ClearLine()
+// {
+//     // nie dziala ;(
+//     int x, y;
+//     x = WhereX();
+//     y = WhereY();
+//     GoToXY(x, y);
+//     for (int i = x; i <= 100; i++)
+//         cout << " ";
+//     GoToXY(x, y);
+// }
 
 // HideCursor() - ukrycie kursora
-// void HideCursor()
-// {
-//     ::HANDLE hConsoleOut = ::GetStdHandle(STD_OUTPUT_HANDLE);
-//     ::CONSOLE_CURSOR_INFO hCCI;
-//     ::GetConsoleCursorInfo(hConsoleOut, &hCCI);
-//     hCCI.bVisible = FALSE;
-//     ::SetConsoleCursorInfo(hConsoleOut, &hCCI);
-// }
+ void HideCursor()
+ {
+     ::HANDLE hConsoleOut = ::GetStdHandle(STD_OUTPUT_HANDLE);
+     ::CONSOLE_CURSOR_INFO hCCI;
+     ::GetConsoleCursorInfo(hConsoleOut, &hCCI);
+     hCCI.bVisible = FALSE;
+     ::SetConsoleCursorInfo(hConsoleOut, &hCCI);
+ }
 
 // WelcomeText() - wyswietla tekst powitalny uzytkownikowi
  void WelcomeText()
@@ -120,17 +120,17 @@ void GoToXY(int x, int y)
 
      do
      {
-         cout << "---------------------------------------------------" << endl;
-         cout << "-- Wybierz jeden ze znakow i podaj jego numer: ";
+         GoToXY(0,28);
+         cout << "-- Wybierz jeden ze znakow i podaj jego numer:   ";
          GoToXY(46,28);
          cin >> znak;
          if (znak < 32 || znak > 127)
          {
+             cout << "---------------------------------------------------" << endl;
              cout << "--- Bledny znak, wybierz z przedzialu <32, 127> " << endl;
+             cout << "---------------------------------------------------" << endl;
          }
      } while (znak < 32 || znak > 127);
-
-     cout << "           Wybrales znak: " << znak << " czyli \"" << (char)(znak) << "\"" << endl;
 
      // kod ASCII 32 - znak spacji
      // kod ASCII 127 - klawisz Delete
@@ -142,19 +142,22 @@ void GoToXY(int x, int y)
  int EnterSize()
  {
      int rozmiar;
-
+     GoToXY(0 ,0);
+     PrintBackground();
      do
      {
-         GoToXY(0 ,0);
-         PrintBackground();
          GoToXY(0, 0);
          cout << "---------------------------------------------------" << endl;
          cout << "---------------------------------------------------" << endl;
-         cout << "--------- Podaj rozmiar figury od 3 do 20: ";
+         cout << "--------- Podaj rozmiar figury od 3 do 20:   ";
+         GoToXY(43, 2);
          cin >> rozmiar;
          if (rozmiar < 3 || rozmiar > 20)
          {
-             cout << "------ Podales zly rozmiar, sproboj ponownie." << endl;
+            GoToXY(0,3);
+            cout << "---------------------------------------------------" << endl;
+            cout << "------ Podales zly rozmiar, sproboj ponownie." << endl;
+            cout << "---------------------------------------------------" << endl;
          }
      } while (rozmiar < 3 || rozmiar > 20);
 
@@ -178,21 +181,53 @@ void GoToXY(int x, int y)
              if (j == i || j == (rozmiar + 1 - i))
                  cout << (char)(znak);
              else
-                 cout << " ";
+                 cout << "-";
          }
          cout << endl;
      }
  }
 
 // MoveIt() - przesuwa figure za pomoca strzalek
- void MoveIt(float size, float x, float y, char znak) {
+ void MoveIt(int rozmiar, int x, int y, int znak) {
+    int button;
 
+    GoToXY(0,0);
+    PrintBackground();
+    GoToXY(0,0);
+    PrintPattern(rozmiar, znak);
+    HideCursor();
+    do {
+        button = getch();
+        GoToXY(0, 0);
+        PrintBackground();
+
+        if (button == 115 || button == 83) { // button 's' - down
+            y++;
+            GoToXY(x, y);
+            PrintPattern(rozmiar, znak);
+        }
+        if (button == 119 || button == 87) { // button 'w' - up
+            y--;
+            GoToXY(x, y);
+            PrintPattern(rozmiar, znak);
+        }
+        if (button == 97 || button == 65) { // button 'a' - left
+            x--;
+            GoToXY(x, y);
+            PrintPattern(rozmiar, znak);
+        }
+        if (button == 100 || button == 68) { // button 'd' - right
+            x++;
+            GoToXY(x, y);
+            PrintPattern(rozmiar, znak);
+        }
+
+    } while (button != 104);
  }
 
 int main()
 {
     int x, y, znak, rozmiar;
-
     // MessageBox( NULL, "Dzien dobry!\nZa chwile zobaczysz interfejs w konsoli.", "Projekt zaliczeniowy", MB_OK);
 
     WelcomeText();
@@ -200,14 +235,7 @@ int main()
     znak = ChooseASCII();
     rozmiar = EnterSize();
 
-    GoToXY(0, 0);
-    PrintBackground();
-    GoToXY(0, 0);
-    PrintPattern(rozmiar, znak);
-
-    // MoveIt(rozmiar, x, y, znak);
-
-    getch();
+    MoveIt(rozmiar, 0, 0, znak);
 
     return 0;
 }
