@@ -6,6 +6,13 @@
 
 using namespace std;
 
+ // PrintBackground() - drukuje tlo interfejsu
+ void PrintBackground() {
+     for (int i = 0; i < 30; i++) {
+        cout << "---------------------------------------------------" << endl;
+     }
+ }
+
 // GoToXY(x,y) - pozycjonowanie kursora
 void GoToXY(int x, int y)
 {
@@ -61,23 +68,28 @@ void GoToXY(int x, int y)
 // WelcomeText() - wyswietla tekst powitalny uzytkownikowi
  void WelcomeText()
  {
+     PrintBackground();
+     GoToXY(0, 0);
      cout << "---------------------------------------------------" << endl;
      cout << "---------------------------------------------------" << endl;
      cout << "---------- Witaj w programie IKS v0.1! ------------" << endl;
      cout << "- Bedziesz mial mozliwosc rysowania znakiem ASCII -" << endl;
      cout << "---------------------------------------------------" << endl;
      cout << "---------------------------------------------------" << endl;
-     cout << "------- Wcisnij dowolny klawisz zeby zaczac -------" << endl;
-     cout << "---------------------------------------------------" << endl;
-     cout << "---------------------------------------------------" << endl;
-     getchar();
+     cout << "------- Wcisnij dowolny klawisz zeby zaczac  ";
+     GoToXY(44,6);
+     getch();
  }
 
 // PrintASCII() - drukuje dostepne znaki ASCII i zwraca wybrany
  int ChooseASCII()
  {
      int znak;
+
      GoToXY(0, 0);
+     PrintBackground();
+     GoToXY(0, 0);
+
      cout << "---------------------------------------------------" << endl;
      cout << "----- Ponizej przedstawiono znaki kodu ASCII: -----" << endl;
      cout << "---------------------------------------------------" << endl;
@@ -109,11 +121,12 @@ void GoToXY(int x, int y)
      do
      {
          cout << "---------------------------------------------------" << endl;
-         cout << "   Wybierz jeden ze znakow i podaj jego numer: ";
+         cout << "-- Wybierz jeden ze znakow i podaj jego numer: ";
+         GoToXY(46,28);
          cin >> znak;
          if (znak < 32 || znak > 127)
          {
-             cout << "   Bledny znak, wybierz z przedzialu <32, 127>" << endl;
+             cout << "--- Bledny znak, wybierz z przedzialu <32, 127> " << endl;
          }
      } while (znak < 32 || znak > 127);
 
@@ -129,17 +142,19 @@ void GoToXY(int x, int y)
  int EnterSize()
  {
      int rozmiar;
-     system("cls");
-     GoToXY(0 ,0);
+
      do
      {
+         GoToXY(0 ,0);
+         PrintBackground();
+         GoToXY(0, 0);
          cout << "---------------------------------------------------" << endl;
          cout << "---------------------------------------------------" << endl;
-         cout << "          Podaj rozmiar figury od 3 do 20: ";
+         cout << "--------- Podaj rozmiar figury od 3 do 20: ";
          cin >> rozmiar;
          if (rozmiar < 3 || rozmiar > 20)
          {
-             cout << "       Podales zly rozmiar, sproboj ponownie." << endl;
+             cout << "------ Podales zly rozmiar, sproboj ponownie." << endl;
          }
      } while (rozmiar < 3 || rozmiar > 20);
 
@@ -178,14 +193,16 @@ int main()
 {
     int x, y, znak, rozmiar;
 
-    // // MessageBox( NULL, "Dzien dobry!\nZa chwile zobaczysz interfejs w konsoli.", "Projekt zaliczeniowy", MB_OK);
+    // MessageBox( NULL, "Dzien dobry!\nZa chwile zobaczysz interfejs w konsoli.", "Projekt zaliczeniowy", MB_OK);
 
     WelcomeText();
 
     znak = ChooseASCII();
     rozmiar = EnterSize();
-    system("cls");
 
+    GoToXY(0, 0);
+    PrintBackground();
+    GoToXY(0, 0);
     PrintPattern(rozmiar, znak);
 
     // MoveIt(rozmiar, x, y, znak);
