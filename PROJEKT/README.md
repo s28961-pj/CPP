@@ -17,14 +17,15 @@ Napisz program rysowania znakiem ASCII poniższej figury. Program powinien umoż
 
 ## UPDATE!
 <li> 21.01.2023 - Projekt działa jedynie w systemie Windows! </li>
-<li> 21.01.2023 - Program testowany na GNU GCC COMPILER </li>
-<li> 21.01.2023 - Program nie dziala poprawnie przy uzyciu kompilatora g++ </li>
-<li> 21.01.2023 - Program drukuje dostepne znaki ASCII do wyboru </li>
+<li> 21.01.2023 - Program testowany na GNU GCC COMPILER (CodeBlocks - Windows) </li>
+<li> 21.01.2023 - Program nie dziala poprawnie przy uzyciu kompilatora g++ (VSCode - MacOS) </li>
+<li> 21.01.2023 - Program drukuje dostepne znaki ASCII oraz wybiera jeden </li>
 <li> 21.01.2023 - Program wczytuje rozmiar figury ( od 3 do 20 )  oraz drukuje go w konsoli </li>
+<li> 22.01.2023 - Program pozwala przesuwac figure za pomoca 'W' i 'S' (Gora - Dol)
+<li> 23.01.2023 - Program pozwala zmieniac rozmiar figury
 
 ## TODO:
 <li> przesuwanie figury klawiszami `←`, `→`, `↑`, `↓` </li>
-<li> powiększanie oraz zmniejszanie rozmiaru figury za pomocą klawiszy `+` i `-` </li>
 <li> ograniczenie przesuwania i rozmiarów figury do obszaru ekranu </li>
 
 ### Kryteria oceny projektów:

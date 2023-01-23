@@ -221,6 +221,20 @@ void GoToXY(int x, int y)
             GoToXY(x, y);
             PrintPattern(rozmiar, znak);
         }
+        if (button == 43) { // button '+' - zwieksza figure o 1
+            GoToXY(x, y);
+            if (rozmiar < 20) {
+                rozmiar++;
+            }
+            PrintPattern(rozmiar, znak);
+        }
+        if (button == 45) { // button '-' - zmniejsza figure o 1
+            GoToXY(x, y);
+            if (rozmiar > 3) {
+                rozmiar--;
+            }
+            PrintPattern(rozmiar, znak);
+        }
 
     } while (button != 104);
  }
