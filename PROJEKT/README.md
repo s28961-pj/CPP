@@ -18,22 +18,24 @@ Napisz program rysowania znakiem ASCII poniższej figury. Program powinien umoż
 ## UPDATE!
 <li> 21.01.2023 - Projekt działa jedynie w systemie Windows! </li>
 <li> 21.01.2023 - Program testowany na GNU GCC COMPILER (CodeBlocks - Windows) </li>
-<li> 21.01.2023 - Program nie dziala poprawnie przy uzyciu kompilatora g++ (VSCode - MacOS) </li>
+<li> 21.01.2023 - Program nie dziala poprawnie przy uzyciu kompilatora g++ (VSCode - MacOS M1) </li>
 <li> 21.01.2023 - Program drukuje dostepne znaki ASCII oraz wybiera jeden </li>
 <li> 21.01.2023 - Program wczytuje rozmiar figury ( od 3 do 20 )  oraz drukuje go w konsoli </li>
-<li> 22.01.2023 - Program pozwala przesuwac figure za pomoca 'W' i 'S' (Gora - Dol)
-<li> 23.01.2023 - Program pozwala zmieniac rozmiar figury
+<li> 22.01.2023 - Program pozwala przesuwac figure za pomoca 'W' i 'S' (Gora - Dol) </li>
+<li> 23.01.2023 - Program pozwala zmieniac rozmiar figury '+-' </li>
+<li> 29.01.2023 - Interfejs został nieco ożywiony różnymi kolorami tekstu </li>
+<li> 29.01.2023 - Wprowadzono ograniczenie przesuwania i rozmiarów figury do obszaru ekranu </li>
 
 ## TODO:
 <li> przesuwanie figury klawiszami `←`, `→`, `↑`, `↓` </li>
-<li> ograniczenie przesuwania i rozmiarów figury do obszaru ekranu </li>
+<li> przesuwanie figury na boki </li>
 
 ## Wersje:
 
 <li> `v0.1` </li>
-Pierwsza wersja zawiera tło w postaci znaków "-", krótkie powitanie, tablicę znaków ASCII, możliwość wyboru wielkości znaku i finalnie wyswietla nam obiekt koncowy.
+Pierwsza wersja zawiera tło w postaci znaków "-", krótkie powitanie, tablicę znaków ASCII, możliwość wyboru wielkości znaku i finalnie wyswietla nam obiekt koncowy w lewym górnym rogu konsoli.
 <li> `v0.2` </li>
-Ta wersja zmienia kolory tekstowego interfejsu użytkownika.
+Wersja druga zmienia kolory tekstowego interfejsu użytkownika (TUI), wprowadzono zakresy poruszania sie obiektem, poprawiono długość oraz czytelność kodu.
 
 ### Kryteria oceny projektów:
     Poprawne działanie                      - 20 pkt
