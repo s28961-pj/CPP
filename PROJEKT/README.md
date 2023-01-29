@@ -28,6 +28,13 @@ Napisz program rysowania znakiem ASCII poniższej figury. Program powinien umoż
 <li> przesuwanie figury klawiszami `←`, `→`, `↑`, `↓` </li>
 <li> ograniczenie przesuwania i rozmiarów figury do obszaru ekranu </li>
 
+## Wersje:
+
+<li> `v0.1` </li>
+Pierwsza wersja zawiera tło w postaci znaków "-", krótkie powitanie, tablicę znaków ASCII, możliwość wyboru wielkości znaku i finalnie wyswietla nam obiekt koncowy.
+<li> `v0.2` </li>
+Ta wersja zmienia kolory tekstowego interfejsu użytkownika.
+
 ### Kryteria oceny projektów:
     Poprawne działanie                      - 20 pkt
     Klarowny algorytm                       - 4 pkt
