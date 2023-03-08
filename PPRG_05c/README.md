@@ -1,5 +1,10 @@
 Zadanie 31 Napisz  funkcję  o  prototypie  int  przekatna(int  n,  int  tab[10]10]);  która  oblicza  sumę elementów na przekątnej głównej macierzy kwadratowej tab. Maksymalny rozmiar macierzy to 10x10, n oznacza rozmiar bieżący (n ≤ 10). Przykład: Dla n = 4 i poniższej macierzy suma jest równa 8. W programie powinny znaleźć się również funkcje void dane(int n, int tab[10][10]) - wpisująca do macierzy losowe liczby całkowite, void wyswietl(int n, int tab[10][10]) - wyświetlająca zawartość macierzy. 
 
+5 1 2 1
+4 0 8 8
+7 5 2 4
+0 3 7 1
+
 Zadanie 32W poniższym programie popraw podstawowy błąd a następnie zdefiniuj pięć wskaźników i ustaw je odpowiednio na zmienne n, k, sn, sk i snk. Następnie zmodyfikuj kod tak, aby wszystkie odwołania do zmiennych odbywały za pomocą wskaźników. #include <iostream> int main ( ) { int n , k ; cout << " Podaj k o l e j n o n i k : " << endl ; cin >> n >> k ; int sn = 1 ; for ( int i = 2 ; i <= n ; i ++) sn = sn ∗ i ; int sk = 1 ; for ( int i = 2 ; i <= k ; i ++) sk = sk ∗ i ; int snk = 1 ; for ( int i = 2 ; i <= n−k ; i ++) snk = snk ∗ i ; cout << " Symbol Newtona n nad k wynosi " << sn / ( sk ∗ snk ) ; } 
 
 Zadanie 33 Przetestuj działanie poniższego kodu programu. Jak wytłumaczysz uzyskany wynik? #include <iostream> #include "conio.h" using namespace std; //--------------------------------------------- int main () { char *przystanek[] = {"Gdansk", "Wrzeszcz", "Oliwa", "Sopot", "Orlowo", "Gdynia"}; char *wsk[3];   int i;   for (i = 0; i < 6; i++)        cout << "Przystanek przed zmiana: " << przystanek [i] << endl;   wsk[0] = przystanek[2]; wsk[1] = przystanek[5]; wsk[2] = "TEKST";   for (i = 0; i < 6; i++)        cout << "Przystanek po zmianie: " << przystanek [i] << endl;   cout << "Oto 3 elementy tablicy wsk:\n"       << wsk[0] << ", "       << wsk[1] << ", "       << wsk[2] << endl;   return 0; }
