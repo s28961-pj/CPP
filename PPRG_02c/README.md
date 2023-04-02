@@ -4,9 +4,7 @@
 ### Zadanie 4
 Napisz program, który obliczy sumę kdwadratów liczb od `1` do `n`. Zastosuj instrukcję pętli <b>for</b>. Wyświetl wynik w postaci: 
 
-<code>
-    cout << "1*1 + 2*2 + ... + n*n" << suma << endl;
-</code>
+<code>cout << "1*1 + 2*2 + ... + n*n" << suma << endl;</code>
 
 ### Zadanie 5
 Napisz program, który realizuje następujący pseudokod:
