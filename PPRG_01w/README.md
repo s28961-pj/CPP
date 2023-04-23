@@ -4,6 +4,8 @@
 ### Zadanie 1
 Napisz program zwracający <b>wartość bezwzględną</b> liczby podanej przez użytkownika.
 
+![Tux, the Linux mascot](http://szuflandia.pjwstk.edu.pl/~s28961/wartosc-bezwzgledna.gif)
+
 ### Zadanie 2
 Napisz program informujący czy liczba podana przez użytkownika jest większa, mniejsza czy równa zero. Wykorzystaj tylko dwie instrukcje warunkowe.
 
