@@ -9,6 +9,7 @@ Napisz program zwracający <b>wartość bezwzględną</b> liczby podanej przez u
 ### Zadanie 2
 Napisz program informujący czy liczba podana przez użytkownika jest większa, mniejsza czy równa zero. Wykorzystaj tylko dwie instrukcje warunkowe.
 
+![Tux, the Linux mascot](http://szuflandia.pjwstk.edu.pl/~s28961/wieksze-mniejsze-niz-zero.gif)
 ### Zadanie 3
 Napisz program informujący czy liczba podana przez użytkownika jest parzysta czy nieparzysta.
 
