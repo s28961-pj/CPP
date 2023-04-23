@@ -17,7 +17,7 @@ int Mnozenie(int a, int b)
     return a * b;
 }
 
-int Dzielenie(float a, float b)
+float Dzielenie(float a, float b)
 {
     return a / b;
 }
@@ -31,8 +31,9 @@ int main()
 {
     int liczba1, liczba2, dzialanie;
 
-    cout << "   KALKULATOR   " << endl;
-    cout << "________________" << endl;
+    cout << "----------------------" << endl;
+    cout << "      KALKULATOR      " << endl;
+    cout << "______________________" << endl;
     cout << endl;
 
     do
@@ -51,6 +52,8 @@ int main()
         cout << "4. Dzielenie" << endl;
         cout << "5. Modulo" << endl;
         cout << "0. Wyjscie" << endl;
+        cout << endl;
+
         cout << "Twoj wybor: ";
         cin >> dzialanie;
 
@@ -77,12 +80,12 @@ int main()
             cout << Modulo(liczba1, liczba2) << endl;
             break;
         case 0:
-            cout << "Dzieki i do zobaczenia!";
-            return 0;
+            cout << "Dzieki i do zobaczenia! " << endl;
             break;
         default:
             cout << "Wybrales błedny numer dzialania. Sproboj ponownie." << endl;
             break;
-        }
-    } while (dzialanie <= 0 || dzialanie > 5);
+        };
+    } while (dzialanie == 0);
+
 }
