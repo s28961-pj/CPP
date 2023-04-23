@@ -18,3 +18,5 @@ Wybierz działanie:
 
 Twój wybór: 4
 243 / 3 = 81</pre>
+
+<img src="http://szuflandia.pjwstk.edu.pl/~s28961/kalkulator.gif">
