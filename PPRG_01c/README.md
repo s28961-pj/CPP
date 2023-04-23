@@ -2,6 +2,19 @@
 ---
 
 ### Zadanie 1
-Napisz prosty kalkulator wg załączonej grafiki
+Napisz prosty kalkulator wg załączonej inspiracji:
+<pre>   KALKULATOR   
+----------------
 
-<img src ="./KALKULATOR/kalkulator.png">
+Podaj pierwszą liczbę: 243
+Podaj drugą liczbę: 3
+
+Wybierz działanie:
+1. Dodawanie
+2. Odejmowanie
+3. Mnożenie
+4. Dzielenie
+0. Wyjście
+
+Twój wybór: 4
+243 / 3 = 81</pre>
