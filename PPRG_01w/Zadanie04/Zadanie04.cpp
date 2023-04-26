@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    cout << "\nNAJMNIEJSZA Z TRZECH\n" << endl;
+    cout << "------------------------" << endl;
+    cout << "  NAJMNIEJSZA Z TRZECH" << endl;
     cout << "------------------------" << endl;
 
     int number1, number2, number3, wynik;

@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-    cout << "\nCZY WSRÓD TRZECH LICZB SĄ CHOĆ DWIE TAKIE SAME?\n"
-         << endl;
+    cout << "---------------------------------------------------" << endl;
+    cout << "  CZY WSRÓD TRZECH LICZB SĄ CHOĆ DWIE TAKIE SAME?" << endl;
     cout << "---------------------------------------------------" << endl;
 
     int number1, number2, number3;

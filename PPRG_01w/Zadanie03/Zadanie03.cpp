@@ -6,17 +6,18 @@ int main() {
 
     int liczba;
 
-    cout << "\nPARZYSTA CZY NIEPARZYSTA ?\n" << endl;
+    cout << "------------------------------" << endl;
+    cout << "  PARZYSTA CZY NIEPARZYSTA ?" << endl;
     cout << "------------------------------" << endl;
     
     cout << "Wprowadz liczbe: ";
     cin >> liczba;
     if ( liczba == 0 ) {
-        cout << "\nPodana liczba wynosi 0.";
+        cout << "\nPodana liczba wynosi 0." << endl;
     } else if ( liczba % 2 == 0 ) {
-        cout << "\nPodana liczba jest parzysta.";
+        cout << "\nPodana liczba jest parzysta." << endl;
     } else {
-        cout << "\nPodana liczba jest nieparzysta.";
+        cout << "\nPodana liczba jest nieparzysta." << endl;
     };
 
     return 0;
