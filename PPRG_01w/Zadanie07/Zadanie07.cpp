@@ -13,10 +13,10 @@ int main()
     cin >> number;
     if ((number >= 1 && number <= 10) || (number >= 17 && number <= 21))
     { // Zagniezdzenie wyrazen logicznych
-        cout << "\nPodana liczba nalezy do przedziału <1,10> lub <17,21> " << endl;
+        cout << "\nPodana liczba NALEŻY do przedziału" << endl;
     }
     else
-        cout << "\nPodana liczba NIE nalezy do przedziału <1,10> lub <17,21> " << endl;
+        cout << "\nPodana liczba NIE NALEŻY do przedziału" << endl;
 
     return 0;
 }

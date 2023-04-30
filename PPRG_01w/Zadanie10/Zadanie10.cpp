@@ -6,7 +6,8 @@ int main() {
 
     float a, b, x;
 
-    cout << "\nRÓWNANIE LINIOWE (ax + b = 0)" << endl;
+    cout << "-------------------------------" << endl;
+    cout << " RÓWNANIE LINIOWE (ax + b = 0)" << endl;
     cout << "-------------------------------" << endl;
 
     cout << "Wprowadz a: ";

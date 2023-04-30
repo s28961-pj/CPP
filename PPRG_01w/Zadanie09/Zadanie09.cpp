@@ -5,12 +5,12 @@ using namespace std;
 
 int main()
 {
-    cout << "\nPODAJ 5 LICZB W PORZĄDKU ROSNĄCYM.\n"
-         << endl;
+    cout << "--------------------------------------" << endl;
+    cout << "  PODAJ 5 LICZB W PORZĄDKU ROSNĄCYM." << endl;
     cout << "--------------------------------------" << endl;
 
     int Num1, Num2, Num3, Num4, Num5;
-    string errorMessage = "Podana liczba jest mniejsza lub rowna poprzedniej. Sproboj ponownie...";
+    string errorMessage = "Liczba jest mniejsza/rowna poprzedniej. Sproboj ponownie...";
 
     cout << "Podaj liczbe nr 1: ";
     cin >> Num1;
@@ -54,12 +54,8 @@ int main()
         };
     } while (Num5 <= Num4);
 
-    cout << "Podane liczby: " << endl;
-    cout << Num1 << endl;
-    cout << Num2 << endl;
-    cout << Num3 << endl;
-    cout << Num4 << endl;
-    cout << Num5 << endl;
+    cout << endl << "Podane liczby: " << endl;
+    cout << Num1 << " " << Num2 << " " << Num3 << " " << Num4 << " " << Num5 << endl;
 
     return 0;
 };

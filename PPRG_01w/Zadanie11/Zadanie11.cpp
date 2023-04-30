@@ -8,7 +8,8 @@ int main()
 
     float a, b, c, delta, x_0, x_1, x_2;
 
-    cout << "\nRÓWNANIE KWADRATOWE (axx + bx + c = 0)" << endl;
+    cout << "----------------------------------------" << endl;
+    cout << " RÓWNANIE KWADRATOWE (axx + bx + c = 0)" << endl;
     cout << "----------------------------------------" << endl;
 
     cout << "Wprowadz a: ";
