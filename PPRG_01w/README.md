@@ -3,21 +3,23 @@
 
 ### Zadanie 1
 Napisz program zwracający <b>wartość bezwzględną</b> liczby podanej przez użytkownika.
-
 ![Tux, the Linux mascot](http://szuflandia.pjwstk.edu.pl/~s28961/wartosc-bezwzgledna.gif)
 
 ### Zadanie 2
 Napisz program informujący czy liczba podana przez użytkownika jest większa, mniejsza czy równa zero. Wykorzystaj tylko dwie instrukcje warunkowe.
-
 ![Tux, the Linux mascot](http://szuflandia.pjwstk.edu.pl/~s28961/wieksze-mniejsze-niz-zero.gif)
+
 ### Zadanie 3
 Napisz program informujący czy liczba podana przez użytkownika jest parzysta czy nieparzysta.
+![Tux, the Linux mascot](http://szuflandia.pjwstk.edu.pl/~s28961/parzysta-nieparzysta.gif)
 
 ### Zadanie 4
 Napisz program wyznaczający najmniejszą z trzech liczb podanych przez użytkownika.
+![Tux, the Linux mascot](http://szuflandia.pjwstk.edu.pl/~s28961/najmniejsza-z-trzech.gif)
 
 ### Zadanie 5
 Napisz program, który odpowiada na pytanie, czy wśród trzech liczb są choć dwie takie same.
+![Tux, the Linux mascot](http://szuflandia.pjwstk.edu.pl/~s28961/przynajmniej-dwie-z-trzech.gif)
 
 ### Zadanie 6
 Napisz program, który odpowiada na pytanie, czy trzy podawane liczby całkowite są ustawione w porządku rosnącym.
